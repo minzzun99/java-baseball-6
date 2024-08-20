@@ -1,5 +1,7 @@
 package baseball.view;
 
+import camp.nextstep.edu.missionutils.Console;
+
 public class InputView {
     private static final String GAME_START_MSG = "숫자 야구 게임을 시작합니다.";
     private static final String INPUT_MSG = "숫자를 입력해주세요 : ";
@@ -19,5 +21,15 @@ public class InputView {
     // 게임 종료 여부를 묻는 메시지를 출력하는 메서드
     public static void printRestartOrExit() {
         System.out.println(RESTART_OR_EXIT_MSG);
+    }
+
+    // 사용자에게 숫자를 입력받는 메서드
+    public static String getInputNumber() {
+        return Console.readLine();
+    }
+
+    // 재시작 여부를 입력받는 메서드
+    public static String getRestartOrExit() {
+        return Console.readLine();
     }
 }
