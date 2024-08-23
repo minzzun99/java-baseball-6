@@ -13,6 +13,10 @@ public class Computer {
         this.randomNumbers = randomNumberGenerator.generateRandomNumbers(START_RANGE, END_RANGE, RANDOM_NUMBER_SIZE);
     }
 
+    public List<Integer> getRandomNumbers() {
+        return randomNumbers;
+    }
+
     /*// 랜덤 숫자 생성 테스트
     public static void main(String[] args) {
         RandomNumberGenerator rmg = new RandomNumberGenerator();

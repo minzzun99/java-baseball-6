@@ -12,8 +12,7 @@ public class Player {
             Validation.validationInputNumber(numberStr);
             this.inputNumbers = numberToList(numberStr);
         } catch (IllegalArgumentException e) {
-            System.out.println(e.getMessage());
-            throw new IllegalArgumentException("사용자 입력 예외 발생");
+            throw new IllegalArgumentException(e.getMessage());
         }
     }
 

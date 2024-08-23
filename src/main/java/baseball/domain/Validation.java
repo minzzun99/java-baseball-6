@@ -26,4 +26,10 @@ public class Validation {
             throw new IllegalArgumentException("중복되지 않은 숫자를 입력해주세요.");
         }
     }
+
+    public static void validationRestartInput(String input) {
+        if (!(input.equals("1") || input.equals("2"))) {
+            throw new IllegalArgumentException("1과 2의 숫자만 입력해주세요.");
+        }
+    }
 }

@@ -9,17 +9,17 @@ public class InputView {
     private static final String RESTART_OR_EXIT_MSG = "게임을 새로 시작하려면 1, 종료하려면 2를 입력하세요.";
 
     // 게임 시작 메시지를 출력하는 메서드
-    public static void printStart() {
+    public static void printStartMsg() {
         System.out.println(GAME_START_MSG);
     }
 
     // 숫자를 입력 받는 메시지 출력하는 메서드
-    public static void printInputNumber() {
+    public static void printInputNumberMsg() {
         System.out.println(INPUT_MSG);
     }
 
     // 게임 종료 여부를 묻는 메시지를 출력하는 메서드
-    public static void printRestartOrExit() {
+    public static void printRestartOrExitMsg() {
         System.out.println(RESTART_OR_EXIT_MSG);
     }
 
