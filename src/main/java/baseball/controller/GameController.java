@@ -27,6 +27,7 @@ public class GameController {
                     break;
                 }
             } catch (IllegalArgumentException e) {
+                System.out.println(e.getMessage());
                 throw new IllegalArgumentException();
             }
         }

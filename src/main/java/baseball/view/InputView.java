@@ -15,7 +15,7 @@ public class InputView {
 
     // 숫자를 입력 받는 메시지 출력하는 메서드
     public static void printInputNumberMsg() {
-        System.out.println(INPUT_MSG);
+        System.out.print(INPUT_MSG);
     }
 
     // 게임 종료 여부를 묻는 메시지를 출력하는 메서드
