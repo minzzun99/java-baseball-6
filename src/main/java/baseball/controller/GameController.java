@@ -9,12 +9,12 @@ import baseball.view.InputView;
 import baseball.view.OutputView;
 
 public class GameController {
-    public void run() {
+    public static void run() {
         InputView.printStartMsg();
         startGame();
     }
 
-    public void startGame() {
+    public static void startGame() {
         Computer computer = new Computer(new RandomNumberGenerator());
         while (true) {
             InputView.printInputNumberMsg();
@@ -31,6 +31,7 @@ public class GameController {
                 return;
             }
         }
+
         InputView.printRestartOrExitMsg();
         try {
             String restartInput = InputView.getRestartOrExit();
