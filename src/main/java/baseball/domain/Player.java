@@ -12,7 +12,7 @@ public class Player {
             Validation.validationInputNumber(numberStr);
             this.inputNumbers = numberToList(numberStr);
         } catch (IllegalArgumentException e) {
-            throw new IllegalArgumentException(e.getMessage());
+            throw new IllegalArgumentException();
         }
     }
 
